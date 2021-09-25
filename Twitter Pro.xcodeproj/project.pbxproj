@@ -14,6 +14,7 @@
 		B90F6DB026FCD1C700DE0183 /* Twitter_ProTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90F6DAF26FCD1C700DE0183 /* Twitter_ProTests.swift */; };
 		B90F6DBA26FCD1C700DE0183 /* Twitter_ProUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90F6DB926FCD1C700DE0183 /* Twitter_ProUITests.swift */; };
 		B90F6DBC26FCD1C700DE0183 /* Twitter_ProUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90F6DBB26FCD1C700DE0183 /* Twitter_ProUITestsLaunchTests.swift */; };
+		B90F6DCA26FECEC300DE0183 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = B90F6DC926FECEC300DE0183 /* ComposableArchitecture */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B90F6DCA26FECEC300DE0183 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +145,9 @@
 			dependencies = (
 			);
 			name = "Twitter Pro";
+			packageProductDependencies = (
+				B90F6DC926FECEC300DE0183 /* ComposableArchitecture */,
+			);
 			productName = "Twitter Pro";
 			productReference = B90F6D9B26FCD1C500DE0183 /* Twitter Pro.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +220,9 @@
 				Base,
 			);
 			mainGroup = B90F6D9226FCD1C400DE0183;
+			packageReferences = (
+				B90F6DC826FECEC300DE0183 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			productRefGroup = B90F6D9C26FCD1C500DE0183 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -607,6 +615,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B90F6DC826FECEC300DE0183 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B90F6DC926FECEC300DE0183 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B90F6DC826FECEC300DE0183 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B90F6D9326FCD1C400DE0183 /* Project object */;
 }
