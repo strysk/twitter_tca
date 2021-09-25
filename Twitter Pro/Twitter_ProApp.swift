@@ -6,12 +6,13 @@
 //
 
 import SwiftUI
+import ComposableArchitecture
 
 @main
 struct Twitter_ProApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(store: Store(initialState: SearchState(), reducer: searchReducer, environment: SearchEnvironment()))
         }
     }
 }
