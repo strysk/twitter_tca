@@ -9,7 +9,17 @@ import ComposableArchitecture
 
 let searchReducer = Reducer<SearchState, SearchAction, SearchEnvironment> { state, action ,environment in
     switch action {
-    default:
+    case .expand:
+        state.isExpand = true
+        return .none
+        
+    case .shrink:
+        state.isExpand = false
+        return .none
+        
+    case .selectSearchType(let searchType):
+        state.menuTitle = searchType.rawValue
+        state.searchType = searchType
         return .none
     }
 }

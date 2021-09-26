@@ -10,11 +10,14 @@ import ComposableArchitecture
 
 struct ContentView: View {
     
-    let store: Store<SearchState, SearchAction>
+    private let store: Store<SearchState, SearchAction>
+    
+    init(store: Store<SearchState, SearchAction>) {
+        self.store = store
+    }
     
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        DropDownMenu(store: store)
     }
 }
 

@@ -6,5 +6,7 @@
 //
 
 struct SearchState: Equatable {
-    
+    var isExpand: Bool = false
+    var menuTitle: String = "検索タイプ"
+    var searchType: SearchType? = nil
 }

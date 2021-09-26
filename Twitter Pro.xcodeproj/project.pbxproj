@@ -19,6 +19,8 @@
 		B90F6DCE26FEEF7400DE0183 /* SearchState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90F6DCD26FEEF7400DE0183 /* SearchState.swift */; };
 		B90F6DD026FEEF8900DE0183 /* SearchEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90F6DCF26FEEF8900DE0183 /* SearchEnvironment.swift */; };
 		B90F6DD226FEEFB800DE0183 /* SearchReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90F6DD126FEEFB800DE0183 /* SearchReducer.swift */; };
+		B90F6DD426FF7EB900DE0183 /* DropDownMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90F6DD326FF7EB900DE0183 /* DropDownMenu.swift */; };
+		B90F6DD626FF851900DE0183 /* SearchType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90F6DD526FF851900DE0183 /* SearchType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		B90F6DCD26FEEF7400DE0183 /* SearchState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchState.swift; sourceTree = "<group>"; };
 		B90F6DCF26FEEF8900DE0183 /* SearchEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchEnvironment.swift; sourceTree = "<group>"; };
 		B90F6DD126FEEFB800DE0183 /* SearchReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchReducer.swift; sourceTree = "<group>"; };
+		B90F6DD326FF7EB900DE0183 /* DropDownMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownMenu.swift; sourceTree = "<group>"; };
+		B90F6DD526FF851900DE0183 /* SearchType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,14 +108,16 @@
 		B90F6D9D26FCD1C500DE0183 /* Twitter Pro */ = {
 			isa = PBXGroup;
 			children = (
-				B90F6D9E26FCD1C500DE0183 /* Twitter_ProApp.swift */,
-				B90F6DA026FCD1C500DE0183 /* ContentView.swift */,
-				B90F6DD126FEEFB800DE0183 /* SearchReducer.swift */,
-				B90F6DCF26FEEF8900DE0183 /* SearchEnvironment.swift */,
-				B90F6DCD26FEEF7400DE0183 /* SearchState.swift */,
-				B90F6DCB26FEEF5800DE0183 /* SearchAction.swift */,
 				B90F6DA226FCD1C600DE0183 /* Assets.xcassets */,
+				B90F6DA026FCD1C500DE0183 /* ContentView.swift */,
+				B90F6DD326FF7EB900DE0183 /* DropDownMenu.swift */,
 				B90F6DA426FCD1C600DE0183 /* Preview Content */,
+				B90F6DCB26FEEF5800DE0183 /* SearchAction.swift */,
+				B90F6DCF26FEEF8900DE0183 /* SearchEnvironment.swift */,
+				B90F6DD126FEEFB800DE0183 /* SearchReducer.swift */,
+				B90F6DCD26FEEF7400DE0183 /* SearchState.swift */,
+				B90F6D9E26FCD1C500DE0183 /* Twitter_ProApp.swift */,
+				B90F6DD526FF851900DE0183 /* SearchType.swift */,
 			);
 			path = "Twitter Pro";
 			sourceTree = "<group>";
@@ -280,7 +286,9 @@
 				B90F6DD026FEEF8900DE0183 /* SearchEnvironment.swift in Sources */,
 				B90F6DA126FCD1C500DE0183 /* ContentView.swift in Sources */,
 				B90F6D9F26FCD1C500DE0183 /* Twitter_ProApp.swift in Sources */,
+				B90F6DD626FF851900DE0183 /* SearchType.swift in Sources */,
 				B90F6DCC26FEEF5800DE0183 /* SearchAction.swift in Sources */,
+				B90F6DD426FF7EB900DE0183 /* DropDownMenu.swift in Sources */,
 				B90F6DD226FEEFB800DE0183 /* SearchReducer.swift in Sources */,
 				B90F6DCE26FEEF7400DE0183 /* SearchState.swift in Sources */,
 			);
