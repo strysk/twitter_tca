@@ -109,15 +109,10 @@
 			isa = PBXGroup;
 			children = (
 				B90F6DA226FCD1C600DE0183 /* Assets.xcassets */,
-				B90F6DA026FCD1C500DE0183 /* ContentView.swift */,
-				B90F6DD326FF7EB900DE0183 /* DropDownMenu.swift */,
+				B90F6DD827021AEC00DE0183 /* Domain */,
+				B90F6DD927021BF600DE0183 /* Model */,
+				B90F6DD727021AD400DE0183 /* Presentation */,
 				B90F6DA426FCD1C600DE0183 /* Preview Content */,
-				B90F6DCB26FEEF5800DE0183 /* SearchAction.swift */,
-				B90F6DCF26FEEF8900DE0183 /* SearchEnvironment.swift */,
-				B90F6DD126FEEFB800DE0183 /* SearchReducer.swift */,
-				B90F6DCD26FEEF7400DE0183 /* SearchState.swift */,
-				B90F6D9E26FCD1C500DE0183 /* Twitter_ProApp.swift */,
-				B90F6DD526FF851900DE0183 /* SearchType.swift */,
 			);
 			path = "Twitter Pro";
 			sourceTree = "<group>";
@@ -145,6 +140,35 @@
 				B90F6DBB26FCD1C700DE0183 /* Twitter_ProUITestsLaunchTests.swift */,
 			);
 			path = "Twitter ProUITests";
+			sourceTree = "<group>";
+		};
+		B90F6DD727021AD400DE0183 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				B90F6DA026FCD1C500DE0183 /* ContentView.swift */,
+				B90F6DD326FF7EB900DE0183 /* DropDownMenu.swift */,
+				B90F6D9E26FCD1C500DE0183 /* Twitter_ProApp.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		B90F6DD827021AEC00DE0183 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				B90F6DCB26FEEF5800DE0183 /* SearchAction.swift */,
+				B90F6DCF26FEEF8900DE0183 /* SearchEnvironment.swift */,
+				B90F6DD126FEEFB800DE0183 /* SearchReducer.swift */,
+				B90F6DCD26FEEF7400DE0183 /* SearchState.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		B90F6DD927021BF600DE0183 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B90F6DD526FF851900DE0183 /* SearchType.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
