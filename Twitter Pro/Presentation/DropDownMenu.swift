@@ -18,20 +18,28 @@ struct DropDownMenu: View {
     
     var body: some View {
         WithViewStore(store) { viewStore in
-            Text(viewStore.menuTitle)
+            VStack() {
+                HStack() {
+                    Text(viewStore.menuTitle)
+                    Image(systemName: viewStore.isExpand ? "chevron.up" : "chevron.down")
+                        .frame(width: 24, height: 24)
+                }
                 .onTapGesture {
                     let modifiedState: SearchAction = viewStore.isExpand ? .shrink : .expand
                     viewStore.send(modifiedState)
                 }
-            
-            if viewStore.isExpand {
-                ForEach(SearchType.allCases, id: \.hashValue) { searchType in
-                    Button(searchType.rawValue) {
-                        viewStore.send(.selectSearchType(searchType))
-                        viewStore.send(.shrink)
+                
+                if viewStore.isExpand {
+                    ForEach(SearchType.allCases, id: \.hashValue) { searchType in
+                        Button(searchType.rawValue) {
+                            viewStore.send(.selectSearchType(searchType))
+                            viewStore.send(.shrink)
+                        }
                     }
                 }
             }
+            .padding(4)
+            .border(.black, width: 1)
         }
     }
 }
