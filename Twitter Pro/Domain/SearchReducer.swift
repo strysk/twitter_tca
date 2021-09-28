@@ -21,5 +21,9 @@ let searchReducer = Reducer<SearchState, SearchAction, SearchEnvironment> { stat
         state.menuTitle = searchType.rawValue
         state.searchType = searchType
         return .none
+        
+    case .inputText(let text):
+        state.searchKeyword = text
+        return .none
     }
 }

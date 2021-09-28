@@ -17,7 +17,15 @@ struct ContentView: View {
     }
     
     var body: some View {
-        DropDownMenu(store: store)
+        WithViewStore(store) { viewStore in
+            VStack(spacing: .zero) {
+                DropDownMenu(store: store)
+                
+                TextField("キーワード", text: viewStore.binding(get: \.searchKeyword, send: SearchAction.inputText))
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .padding()
+            }
+        }
     }
 }
 
