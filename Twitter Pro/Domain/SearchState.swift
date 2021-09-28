@@ -11,4 +11,5 @@ struct SearchState: Equatable {
     var searchType: SearchType? = nil
     var userId: String = ""
     var keyword: String = ""
+    var shouldShowResult: Bool = false
 }

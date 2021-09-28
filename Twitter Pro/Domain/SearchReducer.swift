@@ -31,6 +31,11 @@ let searchReducer = Reducer<SearchState, SearchAction, SearchEnvironment> { stat
         return .none
         
     case .search:
+        state.shouldShowResult = true
+        return .none
+        
+    case .showResult:
+        state.shouldShowResult = false
         return .none
     }
 }

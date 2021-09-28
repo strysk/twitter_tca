@@ -12,4 +12,5 @@ enum SearchAction: Equatable {
     case inputUserId(String)
     case inputKeyword(String)
     case search
+    case showResult
 }

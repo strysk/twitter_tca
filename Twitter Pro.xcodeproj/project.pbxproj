@@ -21,6 +21,7 @@
 		B90F6DD226FEEFB800DE0183 /* SearchReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90F6DD126FEEFB800DE0183 /* SearchReducer.swift */; };
 		B90F6DD426FF7EB900DE0183 /* DropDownMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90F6DD326FF7EB900DE0183 /* DropDownMenu.swift */; };
 		B90F6DD626FF851900DE0183 /* SearchType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90F6DD526FF851900DE0183 /* SearchType.swift */; };
+		B90F6DDB27035E0600DE0183 /* SearchResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90F6DDA27035E0600DE0183 /* SearchResultView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		B90F6DD126FEEFB800DE0183 /* SearchReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchReducer.swift; sourceTree = "<group>"; };
 		B90F6DD326FF7EB900DE0183 /* DropDownMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownMenu.swift; sourceTree = "<group>"; };
 		B90F6DD526FF851900DE0183 /* SearchType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchType.swift; sourceTree = "<group>"; };
+		B90F6DDA27035E0600DE0183 /* SearchResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +150,7 @@
 				B90F6DA026FCD1C500DE0183 /* ContentView.swift */,
 				B90F6DD326FF7EB900DE0183 /* DropDownMenu.swift */,
 				B90F6D9E26FCD1C500DE0183 /* Twitter_ProApp.swift */,
+				B90F6DDA27035E0600DE0183 /* SearchResultView.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -314,6 +317,7 @@
 				B90F6DCC26FEEF5800DE0183 /* SearchAction.swift in Sources */,
 				B90F6DD426FF7EB900DE0183 /* DropDownMenu.swift in Sources */,
 				B90F6DD226FEEFB800DE0183 /* SearchReducer.swift in Sources */,
+				B90F6DDB27035E0600DE0183 /* SearchResultView.swift in Sources */,
 				B90F6DCE26FEEF7400DE0183 /* SearchState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
