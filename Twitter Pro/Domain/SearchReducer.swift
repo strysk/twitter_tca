@@ -25,5 +25,8 @@ let searchReducer = Reducer<SearchState, SearchAction, SearchEnvironment> { stat
     case .inputText(let text):
         state.searchKeyword = text
         return .none
+        
+    case .search:
+        return .none
     }
 }

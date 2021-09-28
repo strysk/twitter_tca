@@ -10,4 +10,5 @@ enum SearchAction: Equatable {
     case shrink
     case selectSearchType(SearchType)
     case inputText(String)
+    case search
 }
