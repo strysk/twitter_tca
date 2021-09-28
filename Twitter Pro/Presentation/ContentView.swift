@@ -23,7 +23,11 @@ struct ContentView: View {
                 
                 DropDownMenu(store: store)
                 
-                TextField("キーワード", text: viewStore.binding(get: \.searchKeyword, send: SearchAction.inputText))
+                TextField("ユーザーID", text: viewStore.binding(get: \.userId, send: SearchAction.inputUserId))
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .padding()
+                
+                TextField("キーワード", text: viewStore.binding(get: \.keyword, send: SearchAction.inputKeyword))
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .padding()
                 

@@ -9,6 +9,7 @@ enum SearchAction: Equatable {
     case expand
     case shrink
     case selectSearchType(SearchType)
-    case inputText(String)
+    case inputUserId(String)
+    case inputKeyword(String)
     case search
 }

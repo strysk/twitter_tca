@@ -22,8 +22,12 @@ let searchReducer = Reducer<SearchState, SearchAction, SearchEnvironment> { stat
         state.searchType = searchType
         return .none
         
-    case .inputText(let text):
-        state.searchKeyword = text
+    case .inputUserId(let userId):
+        state.userId = userId
+        return .none
+        
+    case .inputKeyword(let keyword):
+        state.keyword = keyword
         return .none
         
     case .search:

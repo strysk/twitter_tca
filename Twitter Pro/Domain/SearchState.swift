@@ -9,5 +9,6 @@ struct SearchState: Equatable {
     var isExpand: Bool = false
     var menuTitle: String = "検索タイプ"
     var searchType: SearchType? = nil
-    var searchKeyword: String = ""
+    var userId: String = ""
+    var keyword: String = ""
 }
