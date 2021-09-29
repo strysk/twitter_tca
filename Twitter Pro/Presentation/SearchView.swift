@@ -8,7 +8,7 @@
 import SwiftUI
 import ComposableArchitecture
 
-struct ContentView: View {
+struct SearchView: View {
     
     private let store: Store<SearchState, SearchAction>
     
@@ -51,6 +51,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(store: Store(initialState: SearchState(), reducer: searchReducer, environment: SearchEnvironment()))
+        SearchView(store: Store(initialState: SearchState(), reducer: searchReducer, environment: SearchEnvironment()))
     }
 }

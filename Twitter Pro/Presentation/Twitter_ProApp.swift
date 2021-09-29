@@ -12,7 +12,7 @@ import ComposableArchitecture
 struct Twitter_ProApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView(store: Store(initialState: SearchState(), reducer: searchReducer, environment: SearchEnvironment()))
+            SearchView(store: Store(initialState: SearchState(), reducer: searchReducer, environment: SearchEnvironment()))
         }
     }
 }
