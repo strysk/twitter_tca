@@ -12,4 +12,5 @@ struct SearchState: Equatable {
     var userId: String = ""
     var keyword: String = ""
     var shouldShowResult: Bool = false
+    var tweetData: [TweetData] = []
 }

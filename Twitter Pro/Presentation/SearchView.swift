@@ -40,7 +40,7 @@ struct SearchView: View {
                     .background(Color.blue)
                     .cornerRadius(8)
                     
-                    NavigationLink(destination: SearchResultView(), isActive: viewStore.binding(get: \.shouldShowResult, send: SearchAction.showResult)) {
+                    NavigationLink(destination: SearchResultView(store: store), isActive: viewStore.binding(get: \.shouldShowResult, send: SearchAction.showResult)) {
                         EmptyView()
                     }
                 }

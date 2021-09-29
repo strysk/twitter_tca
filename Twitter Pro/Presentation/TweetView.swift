@@ -8,6 +8,15 @@
 import SwiftUI
 
 struct TweetView: View {
+    
+    private let userName: String
+    private let tweetText: String
+    
+    init(userName: String, tweetText: String) {
+        self.userName = userName
+        self.tweetText = tweetText
+    }
+    
     var body: some View {
         HStack {
             Image("")
@@ -16,8 +25,8 @@ struct TweetView: View {
                 .clipShape(Circle())
             
             VStack {
-                Text("ユーザー名")
-                Text("本文のサンプル本文のサンプル本文のサンプル本文のサンプル本文のサンプル本文のサンプル本文のサンプル")
+                Text(userName)
+                Text(tweetText)
             }
         }
     }
@@ -25,6 +34,6 @@ struct TweetView: View {
 
 struct TweetView_Previews: PreviewProvider {
     static var previews: some View {
-        TweetView()
+        TweetView(userName: "aaa", tweetText: "bbb")
     }
 }

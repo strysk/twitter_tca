@@ -32,6 +32,7 @@ let searchReducer = Reducer<SearchState, SearchAction, SearchEnvironment> { stat
         
     case .search:
         state.shouldShowResult = true
+        state.tweetData = [TweetData(tweetId: 1, userName: "aaa", tweetText: "bbb"), TweetData(tweetId: 2, userName: "bbb", tweetText: "ccc")]
         return .none
         
     case .showResult:
